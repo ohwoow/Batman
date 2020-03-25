@@ -17,10 +17,9 @@ body {
     background-color: #0A090A;
     color: #fff;
 
-    
-    background-image: url(../img/main-bg@2x.jpg);
+    background-image: url(../img/main-bg@.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
 }
 
@@ -224,9 +223,7 @@ h1,h2,h3,h4,h5,h6,p {
 .short-info__poster {
     display: block;
     margin-top: -80px;
-    margin-bottom: 20px;
-
-    
+    margin-bottom: 20px; 
 }
 
 .short-info__btn {
@@ -240,8 +237,18 @@ h1,h2,h3,h4,h5,h6,p {
 
     font-size: 14.3px;
     line-height: 16px;
-}
 
+    cursor: pointer;
+
+    transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -ms-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+}
+.short-info__btn:hover {
+    background-color: rgb(214, 115, 21);
+}
 
 
 .short-info__actors-title {
@@ -266,7 +273,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .full-info {
-    flex: 0.95;
+    flex: 0.97;
 }
 
 .full-info__menu-link {
@@ -277,6 +284,7 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 21px;
 
     margin-right: 40px;
+    
 }
 
 .full-info__menu-link--active {
@@ -286,20 +294,28 @@ h1,h2,h3,h4,h5,h6,p {
 .full-info__about {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .full-info__about-content {
     margin-right: 78px;
 }
-
+.about-text__title {
+    margin: 33px 0 22px;
+}
 .full-info__about-text {
     font-size: 16px;
     line-height: 22px;
 
     color: #000000;
 
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 .full-info__about-text:last-child {
     margin-bottom: 0;
+}
+
+.banner {
+    display: block;
+    margin-top: 48px;
 }
