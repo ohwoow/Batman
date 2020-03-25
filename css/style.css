@@ -8,6 +8,7 @@ html,
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 19px;
     font-weight: normal;
 
     margin: 0;
@@ -15,6 +16,24 @@ body {
 
     background-color: #0A090A;
     color: #fff;
+
+    
+    background-image: url(../img/main-bg@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+
+
+ul, li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
 }
 
 .container {
@@ -28,12 +47,7 @@ body {
 
 .header {
     padding-top: 45px;
-
-    background-image: url(../img/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    min-height: 801px;
+    margin-bottom: 30%;
 }
 .header__menu {
     display: flex;
@@ -53,14 +67,15 @@ body {
 .header__form-search {
     display: flex;
     align-items: center;
-    flex: 0.8;
+    
+    flex-grow: 0.8;
 }
 
 .form__input-search {
     display: inline-block;
     padding: 12px 18px 12px 18px;
 
-    flex: 1;
+    flex-grow: 1;
 
     background: rgba(196, 196, 196, 0.5);
     color: #AEAEAE;
@@ -72,6 +87,7 @@ body {
 }
 .form__input-search::placeholder {
     color: #AEAEAE;
+    font-family: inherit;
 }
 .form__searck-btn {
     background: transparent;
@@ -104,4 +120,186 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+/* Main */
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+
+    margin-bottom: 7px;
+}
+.title__en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #787878;
+
+    margin-bottom: 38px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 108px;
+}
+.info__movie {
+    display: flex;
+    align-items: center;
+}
+.info__movie-tag {
+    display: inline-block;
+
+
+    background: #FFFFFF;
+    border-radius: 3px;
+
+    padding: 5px 10px;
+    margin-right: 20px;
+
+    color: #333333;
+}
+.info__movie-country {
+    margin-right: 33px;
+}
+.info__movie-play,
+.info__more {
+    text-decoration: none;
+    color: #fff;
+}
+.info__movie-play,
+.info__more {
+    display: flex;
+    align-items: center;
+}
+.info__movie-play::before,
+.info__more::after  {
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.info__movie-play::before {
+    margin-right: 15px;
+}
+
+.info__more::after {
+    margin-left: 15px;
+
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/* content */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    color: #000;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+
+    padding: 43px 50px;
+}
+
+.short-info__poster {
+    display: block;
+    margin-top: -80px;
+    margin-bottom: 20px;
+
+    
+}
+
+.short-info__btn {
+    padding: 10px 44px;
+    margin-bottom: 40px;
+
+    background-color: #FF8F27;;
+    color: #fff;
+
+    border: none;
+
+    font-size: 14.3px;
+    line-height: 16px;
+}
+
+
+
+.short-info__actors-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.short-info__actors-list {
+    padding-left: 15px;
+}
+.short-info__actors-name {
+    line-height: 24px;
+    color: #000000;
+}
+.short-info__actors-name:hover {
+    text-decoration: none;
+}
+
+.full-info {
+    flex: 0.95;
+}
+
+.full-info__menu-link {
+    color: #000;
+
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-right: 40px;
+}
+
+.full-info__menu-link--active {
+    color: #FF8F27;
+}
+
+.full-info__about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-info__about-content {
+    margin-right: 78px;
+}
+
+.full-info__about-text {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+
+    margin: 20px 0;
+}
+.full-info__about-text:last-child {
+    margin-bottom: 0;
 }
