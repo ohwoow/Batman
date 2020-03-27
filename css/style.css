@@ -148,6 +148,8 @@ h1,h2,h3,h4,h5,h6,p {
     color: #787878;
 
     margin-bottom: 38px;
+
+    animation-delay: .5s;
 }
 
 .info {
@@ -175,6 +177,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .info__movie-country {
     margin-right: 33px;
+}
+.info__movie-play {
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 .info__movie-play,
 .info__more {
@@ -277,6 +284,9 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 24px;
     color: #000000;
 }
+.actor-role {
+    color: rgb(255, 161, 39);
+}
 .short-info__actors-name:hover {
     text-decoration: none;
 }
@@ -293,6 +303,9 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 21px;
 
     margin-right: 40px;
+}
+.full-info__menu-link:hover {
+    text-decoration: underline;
 }
 .full-info__menu-link:nth-child(7) {
     margin-right: 54px;
@@ -314,7 +327,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .full-info__about-content {
+    display: none;
     margin-right: 78px;
+}
+.visible {
+    display: block;
 }
 .about-text__title {
     margin: 33px 0 22px;
@@ -383,6 +400,8 @@ h1,h2,h3,h4,h5,h6,p {
 .subscribe__btn:hover {
     background-color: rgb(214, 115, 21);
 }
+
+
 
 
 
@@ -471,9 +490,11 @@ h1,h2,h3,h4,h5,h6,p {
         flex: 1;
         flex-basis: 100%;
         order: 3;
-        margin-top: 5%;
+        margin-top: 6%;
     }
-
+    .title {
+        padding-top: 168px;
+    }
     .info__movie {
         flex-wrap: wrap;
     }

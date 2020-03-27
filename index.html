@@ -6,22 +6,25 @@
     <title>Batman</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="header__menu">
-                <div class="header__logo">
-                    <a href="#" class="header__logo-link">КиноПульс</a> 
+                <div class="header__logo animated fadeInLeft">
+                    <a href="#" class="header__logo-link ">КиноПульс</a> 
                 </div>
-                <form action="#" method="GET" class="header__form-search">
+                <form action="#" method="GET" class="header__form-search animated slideInDown">
                     <input type='search' class="form__input-search" placeholder="Фильмы, сериалы, актеры">
                     <button type="submit" class="form__searck-btn">
                         <img src="img/search-icon.svg" alt="search" class="header__form-img">
                     </button>
                 </form>
-                <div class="header__user">
+                <div class="header__user animated fadeInRight">
                     <a href="#"><img src="img/bookmark.svg" alt="bookmark" class="header__user-bookmark"></a>
                     <a href="#"><img src="img/avatar.jpg" alt="user avatar" class="header__user-avatar"></a>
                 </div>
@@ -31,13 +34,13 @@
 
     <main>
         <div class="container">
-            <h1 class="title">Бэтмен</h1>
-            <small class="title__en">The Batman</small>
-            <div class="info">
+            <h1 class="title animated fadeInLeft">Бэтмен</h1>
+            <small class="title__en animated fadeInLeft">The Batman</small>
+            <div class="info animated fadeInUp delay-1s">
                 <div class="info__movie">
                     <span class="info__movie-tag">Фильм</span>
                     <span class="info__movie-country">США, 2021 год</span>
-                    <a href="#" class="info__movie-play">Смотреть трейлер</a>
+                    <a href="https://www.youtube.com/watch?v=cElcLipGNIA" data-fancybox class="info__movie-play animated pulse">Смотреть трейлер</a>
                 </div>
                     <a href="#" class="info__more">Подробнее</a>
             </div> <!--/info-->
@@ -86,20 +89,20 @@
 
                 <div class="full-info">
                     <nav class="full-info__menu">
-                        <a href="#" class="full-info__menu-link full-info__menu-link--active">Описание</a>
-                        <a href="#" class="full-info__menu-link">Рецензии</a>
-                        <a href="#" class="full-info__menu-link">Премьеры</a>
-                        <a href="#" class="full-info__menu-link">Актеры</a>
-                        <a href="#" class="full-info__menu-link">Награды</a>
-                        <a href="#" class="full-info__menu-link">Факты</a>
-                        <a href="#" class="full-info__menu-link">Сайты</a>
+                        <a href="#about" class="full-info__menu-link full-info__menu-link--active">Описание</a>
+                        <a href="#reviews" class="full-info__menu-link">Рецензии</a>
+                        <a href="#premieres" class="full-info__menu-link">Премьеры</a>
+                        <a href="#actors" class="full-info__menu-link">Актеры</a>
+                        <a href="#awards" class="full-info__menu-link">Награды</a>
+                        <a href="#fact" class="full-info__menu-link">Факты</a>
+                        <a href="#sites" class="full-info__menu-link">Сайты</a>
                         <a href="#" class="full-info__menu-img">
                             <img src="img/bookmark-added.svg" alt="bookmark" class="bookmark-added">
                         </a>
                     </nav>
 
                     <div class="full-info__about">
-                        <div class="full-info__about-content">
+                        <div class="full-info__about-content visible" id="about">
                             <p class="full-info__about-text">
                                 Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. 
                                 Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
@@ -128,10 +131,79 @@
                                  сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.
                             </p>
                         </div>
+                        <div class="full-info__about-content" id="reviews">
+                            <p>Тут скоро появятся реценезии.</p>
+                        </div>
+                        <div class="full-info__about-content" id="premieres">
+                            <p>Тут скоро появятся премьеры.</p>
+                        </div>
+                        <div class="full-info__about-content" id="actors">
+                              <ul class="short-info__actors-list">
+                                <li>
+                                    <div class="short-info__actor">
+                                        Роберт Паттинсон - <span class="actor-role">Брюс Уэйн / Бэтмен</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Зои Кравиц - <span class="actor-role">Селина Кайл / Женщина-кошка</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Колин Фаррелл - <span class="actor-role">Освальд Кобблпот / Пингвин</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Питер Сарсгаард - <span class="actor-role">Дестроук</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Пол Дано - <span class="actor-role">Эдвард Нэштон / Загадочник</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Энди Серкис - <span class="actor-role">Альфред Пенниуорт</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Джеффри Райт - <span class="actor-role">Джеймс Гордон</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Джон Туртурро - <span class="actor-role">Кармайн Фальконе</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Макс Карвер - <span class="actor-role">Макс Карвер</span> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="short-info__actor">
+                                        Кон О’Нилл - <span class="actor-role">Кон О’Нилл</span> 
+                                    </div>
+                                </li>
+                    </ul>
+                        </div>
+                        <div class="full-info__about-content" id="awards">
+                            <p>Тут скоро появятся награды.</p>
+                        </div>
+                        <div class="full-info__about-content" id="fact">
+                            <p>На роль Дестроука рассматривали актёров Стивена Лэнга, Рона Перлмана и Арнольда Шварценеггера.</p>
+                        </div>
+                        <div class="full-info__about-content" id="sites">
+                            <p><a href="https://clck.ru/Mgra6">Статья на Википедии</a></p>
+                        </div>
                         <div class="full-info__subscribe">
                             <h3 class="subcribe__title">Подпишитесь на обновления</h3>
                             <form action="#" class="full-info__form">
-                                <input type="email" class="subscribe__input" placeholder="Ваш E-mail">
+                                <input type="email" class="subscribe__input" placeholder="Ваш E-mail" required>
                                 <button class="subscribe__btn" type="submit">
                                     <img src="img/check.svg" alt="Check">
                                 </button>
@@ -145,5 +217,8 @@
             </div> <!--/content-->
         </div>
     </main>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
