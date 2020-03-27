@@ -510,6 +510,9 @@ h1,h2,h3,h4,h5,h6,p {
     .short-info__actors-title {
         display: none;
     }
+    .short-info__actors-list--mobile {
+        display: block;
+    }
     .short-info__btn {
         width: 70%;
         margin-bottom: 14%;

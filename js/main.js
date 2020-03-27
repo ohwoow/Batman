@@ -6,7 +6,7 @@ $(document).ready(function () {
         let activeContent = $(this).attr('href');
         $('.visible').toggleClass('visible');
         $(activeContent).toggleClass('visible');
-        $('.full-info__menu-link--active').toggleClass('full-info__menu-link--active')
+        $('.full-info__menu-link--active').toggleClass('full-info__menu-link--active');
         $(this).toggleClass('full-info__menu-link--active');
     });
 });
